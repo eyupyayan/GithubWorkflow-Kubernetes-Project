@@ -19,7 +19,7 @@ jobs:
       - name: Logg inn på Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ vars.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Bygg og push image
@@ -28,5 +28,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ vars.DOCKERHUB_USERNAME }}/task-service:latest
-            ${{ vars.DOCKERHUB_USERNAME }}/task-service:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/task-service:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/task-service:${{ github.sha }}
