@@ -27,5 +27,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ vars.DOCKERHUB_USERNAME }}/task-service:latest
+            ${{ vars.DOCKERHUB_USERNAME }}/task-service:v2
             ${{ vars.DOCKERHUB_USERNAME }}/task-service:${{ github.sha }}
