@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/DITT_BRUKERNAVN/devops-demo.git
+    repoURL: https://github.com/eyupyayan/GithubWorkflow-Kubernetes-Project.git
     targetRevision: master
     path: task-service-chart
     helm:
