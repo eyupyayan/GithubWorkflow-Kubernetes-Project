@@ -10,7 +10,7 @@ spec:
     app.kubernetes.io/name: {{ include "task-service.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
-    - port: {{ .Values.service.port }}
+    - name: http
+      port: {{ .Values.service.port }}
       targetPort: 5000
       protocol: TCP
-      name: http
