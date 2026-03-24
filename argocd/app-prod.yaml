@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/eyupyayan/GithubWorkflow-Kubernetes-Project.git
-    targetRevision: HEAD
+    targetRevision: master
     path: task-service-chart
     helm:
       valueFiles:
