@@ -1,0 +1,66 @@
+## `.gitignore`
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+docker-compose.override.yml
+
+# Kubernetes / Helm temp files
+*.tgz
+
+# ArgoCD / local exports
+*.tmp
+*.bak
+
+# Terraform (if added later by mistake)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Secrets / certs
+*.pem
+*.key
+*.crt
+secrets.yaml
+values-secret.yaml
+
+# macOS/Linux temp
+*~
